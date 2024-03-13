@@ -44,7 +44,7 @@ header-includes:
 :::
 ::: {.column width="30%"}
 
-![](./image/me.jpeg)
+![](image/me.jpeg)
 
 :::
 ::::::::::::::

@@ -1,14 +1,13 @@
 ---
 ## Front matter
 lang: ru-RU
-title: Структура научной презентации
-subtitle: Простейший шаблон
+title: Laboratory work No. 5
+subtitle: Customizing the working environment
 author:
-  - Кулябов Д. С.
+  - Karpova E.A.
 institute:
-  - Российский университет дружбы народов, Москва, Россия
-  - Объединённый институт ядерных исследований, Дубна, Россия
-date: 01 января 1970
+  - Peoples' Friendship University of Russia, Moscow, Russia
+date: March 9, 2024
 
 ## i18n babel
 babel-lang: russian
@@ -16,7 +15,7 @@ babel-otherlangs: english
 
 ## Formatting pdf
 toc: false
-toc-title: Содержание
+toc-title: Contents
 slide_level: 2
 aspectratio: 169
 section-titles: true
@@ -28,183 +27,76 @@ header-includes:
  - '\makeatother'
 ---
 
-# Информация
+# Information
 
-## Докладчик
+## Speaker
 
 :::::::::::::: {.columns align=center}
 ::: {.column width="70%"}
 
-  * Кулябов Дмитрий Сергеевич
-  * д.ф.-м.н., профессор
-  * профессор кафедры прикладной информатики и теории вероятностей
-  * Российский университет дружбы народов
-  * [kulyabov-ds@rudn.ru](mailto:kulyabov-ds@rudn.ru)
-  * <https://yamadharma.github.io/ru/>
+  * Karpova Esenia Alexkseevna
+  * student NKAbd-02-23
+  * faculty of physicks and mathematics
+  * PFUR
+  * [1132236008@pfur.ru](mailto:1132236008@pfur.ru)
+  * <https://github.com/eakarpova>
 
 :::
 ::: {.column width="30%"}
 
-![](./image/kulyabov.jpg)
+![](image/me.jpeg)
+
 
 :::
 ::::::::::::::
 
-# Вводная часть
+## Introduction
 
-## Актуальность
+## Relevance
 
-- Важно донести результаты своих исследований до окружающих
-- Научная презентация --- рабочий инструмент исследователя
-- Необходимо создавать презентацию быстро
-- Желательна минимизация усилий для создания презентации
+- Every programmer needs the skill of using Unix system at the command line level to work faster and more efficiently.
 
-## Объект и предмет исследования
+## Purpose of the work
 
-- Презентация как текст
-- Программное обеспечение для создания презентаций
-- Входные и выходные форматы презентаций
+To acquire practical skills of interacting with the system via the command line
 
-## Цели и задачи
+# Tasks
 
-- Создать шаблон презентации в Markdown
-- Описать алгоритм создания выходных форматов презентаций
+1. determine the full name of the home directory
+2. Using cd and ls
+3. Using man
+4. Using history
 
-## Материалы и методы
+## Doing lab work
 
-- Процессор `pandoc` для входного формата Markdown
-- Результирующие форматы
-	- `pdf`
-	- `html`
-- Автоматизация процесса создания: `Makefile`
+## Determine the full name of the home directory
 
-# Создание презентации
+![](image/1.png)
 
-## Процессор `pandoc`
+## Using cd and ls
 
-- Pandoc: преобразователь текстовых файлов
-- Сайт: <https://pandoc.org/>
-- Репозиторий: <https://github.com/jgm/pandoc>
+![Moving to the tmp directory](image/2.png)
 
-## Формат `pdf`
+## Using cd and ls
 
-- Использование LaTeX
-- Пакет для презентации: [beamer](https://ctan.org/pkg/beamer)
-- Тема оформления: `metropolis`
+![The difference is in the options of the ls command](image/3.png)
 
-## Код для формата `pdf`
+## Creating and deleting directories
 
-```yaml
-slide_level: 2
-aspectratio: 169
-section-titles: true
-theme: metropolis
-```
+![](image/7.png)
 
-## Формат `html`
+## Man command
 
-- Используется фреймворк [reveal.js](https://revealjs.com/)
-- Используется [тема](https://revealjs.com/themes/) `beige`
+![Information about rmdir](image/15.png)
 
-## Код для формата `html`
+## The history command
 
-- Тема задаётся в файле `Makefile`
+![The history command](image/17.png)
 
-```make
-REVEALJS_THEME = beige 
-```
-# Результаты
+## The history command
 
-## Получающиеся форматы
+![Modification with the history command](image/17.png)
 
-- Полученный `pdf`-файл можно демонстрировать в любой программе просмотра `pdf`
-- Полученный `html`-файл содержит в себе все ресурсы: изображения, css, скрипты
+## Results
 
-# Элементы презентации
-
-## Актуальность
-
-- Даёт понять, о чём пойдёт речь
-- Следует широко и кратко описать проблему
-- Мотивировать свое исследование
-- Сформулировать цели и задачи
-- Возможна формулировка ожидаемых результатов
-
-## Цели и задачи
-
-- Не формулируйте более 1--2 целей исследования
-
-## Материалы и методы
-
-- Представляйте данные качественно
-- Количественно, только если крайне необходимо
-- Излишние детали не нужны
-
-## Содержание исследования
-
-- Предлагаемое решение задач исследования с обоснованием
-- Основные этапы работы
-
-## Результаты
-
-- Не нужны все результаты
-- Необходимы логические связки между слайдами
-- Необходимо показать понимание материала
-
-
-## Итоговый слайд
-
-- Запоминается последняя фраза. © Штирлиц
-- Главное сообщение, которое вы хотите донести до слушателей
-- Избегайте использовать последний слайд вида *Спасибо за внимание*
-
-# Рекомендации
-
-## Принцип 10/20/30
-
-  - 10 слайдов
-  - 20 минут на доклад
-  - 30 кегль шрифта
-
-## Связь слайдов
-
-::: incremental
-
-- Один слайд --- одна мысль
-- Нельзя ссылаться на объекты, находящиеся на предыдущих слайдах (например, на формулы)
-- Каждый слайд должен иметь заголовок
-
-:::
-
-## Количество сущностей
-
-::: incremental
-
-- Человек может одновременно помнить $7 \pm 2$ элемента
-- При размещении информации на слайде старайтесь чтобы в сумме слайд содержал не более 5 элементов
-- Можно группировать элементы так, чтобы визуально было не более 5 групп
-
-:::
-
-## Общие рекомендации
-
-::: incremental
-
-- На слайд выносится та информация, которая без зрительной опоры воспринимается хуже
-- Слайды должны дополнять или обобщать содержание выступления или его частей, а не дублировать его
-- Информация на слайдах должна быть изложена кратко, чётко и хорошо структурирована
-- Слайд не должен быть перегружен графическими изображениями и текстом
-- Не злоупотребляйте анимацией и переходами
-
-:::
-
-## Представление данных
-
-::: incremental
-
-- Лучше представить в виде схемы
-- Менее оптимально представить в виде рисунка, графика, таблицы
-- Текст используется, если все предыдущие способы отображения информации не подошли
-
-:::
-
+During the laboratory work I acquired practical skills of interacting with the system via the command line

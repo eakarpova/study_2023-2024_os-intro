@@ -1,14 +1,13 @@
 ---
 ## Front matter
 lang: ru-RU
-title: Структура научной презентации
-subtitle: Простейший шаблон
+title: Laboratory work No. 5
+subtitle: Customizing the working environment
 author:
-  - Кулябов Д. С.
+  - Karpova E.A.
 institute:
-  - Российский университет дружбы народов, Москва, Россия
-  - Объединённый институт ядерных исследований, Дубна, Россия
-date: 01 января 1970
+  - Peoples' Friendship University of Russia, Moscow, Russia
+date: March 9, 2024
 
 ## i18n babel
 babel-lang: russian
@@ -16,7 +15,7 @@ babel-otherlangs: english
 
 ## Formatting pdf
 toc: false
-toc-title: Содержание
+toc-title: Contents
 slide_level: 2
 aspectratio: 169
 section-titles: true
@@ -28,183 +27,90 @@ header-includes:
  - '\makeatother'
 ---
 
-# Информация
+# Information
 
-## Докладчик
+## Speaker
 
-:::::::::::::: {.columns align=center}
-::: {.column width="70%"}
+  * Karpova Esenia Alexkseevna
+  * Student NKAbd-02-23
+  * Faculty of Physics and Mathematics
+  * PFUR
+  * [1132236008@pfur.ru](mailto:1132236008@pfur.ru)
+  * <https://github.com/eakarpova>
 
-  * Кулябов Дмитрий Сергеевич
-  * д.ф.-м.н., профессор
-  * профессор кафедры прикладной информатики и теории вероятностей
-  * Российский университет дружбы народов
-  * [kulyabov-ds@rudn.ru](mailto:kulyabov-ds@rudn.ru)
-  * <https://yamadharma.github.io/ru/>
+![](image/me.jpeg)
 
-:::
-::: {.column width="30%"}
+# Introductory part
 
-![](./image/kulyabov.jpg)
+## Relevance
 
-:::
-::::::::::::::
+- Every programmer needs the skill to customize the working environment
 
-# Вводная часть
+## Aims and objectives
 
-## Актуальность
+- Purpose of the work
 
-- Важно донести результаты своих исследований до окружающих
-- Научная презентация --- рабочий инструмент исследователя
-- Необходимо создавать презентацию быстро
-- Желательна минимизация усилий для создания презентации
+Acquire the skill to customize the working environment
 
-## Объект и предмет исследования
+- Tasks
 
-- Презентация как текст
-- Программное обеспечение для создания презентаций
-- Входные и выходные форматы презентаций
+1. Install the pass password manager
+2. Manage configuration files
 
-## Цели и задачи
+# Execution of laboratory work
 
-- Создать шаблон презентации в Markdown
-- Описать алгоритм создания выходных форматов презентаций
+## Installing the password manager pass
 
-## Материалы и методы
+- Configuring gpg keys - view keys
 
-- Процессор `pandoc` для входного формата Markdown
-- Результирующие форматы
-	- `pdf`
-	- `html`
-- Автоматизация процесса создания: `Makefile`
+![](image/2.png)
 
-# Создание презентации
+- Storage initialization
 
-## Процессор `pandoc`
+![](image/3.png)
 
-- Pandoc: преобразователь текстовых файлов
-- Сайт: <https://pandoc.org/>
-- Репозиторий: <https://github.com/jgm/pandoc>
+## Customizing the interface with the browser
 
-## Формат `pdf`
+- Adding a new password
 
-- Использование LaTeX
-- Пакет для презентации: [beamer](https://ctan.org/pkg/beamer)
-- Тема оформления: `metropolis`
+![](image/10.png)
 
-## Код для формата `pdf`
+- Replacing an existing password
 
-```yaml
-slide_level: 2
-aspectratio: 169
-section-titles: true
-theme: metropolis
-```
+![](image/11.png)
 
-## Формат `html`
+## `html` format
 
-- Используется фреймворк [reveal.js](https://revealjs.com/)
-- Используется [тема](https://revealjs.com/themes/) `beige`
+- Installation of additional software
 
-## Код для формата `html`
+![](image/12.png)
 
-- Тема задаётся в файле `Makefile`
+- Installing a binary that detects the processor architecture and operating system and downloads the required file
 
-```make
-REVEALJS_THEME = beige 
-```
-# Результаты
+![](image/13.png)
 
-## Получающиеся форматы
+## Configuration file management
 
-- Полученный `pdf`-файл можно демонстрировать в любой программе просмотра `pdf`
-- Полученный `html`-файл содержит в себе все ресурсы: изображения, css, скрипты
+- Creating your own repository using template-based configuration file utilities
 
-# Элементы презентации
+![](image/14.png)
 
-## Актуальность
+- Connecting a repository to your system: initializing chezmoi with dotfiles repository
 
-- Даёт понять, о чём пойдёт речь
-- Следует широко и кратко описать проблему
-- Мотивировать свое исследование
-- Сформулировать цели и задачи
-- Возможна формулировка ожидаемых результатов
+![](image/15.png)
 
-## Цели и задачи
+## Code for `html` format
 
-- Не формулируйте более 1--2 целей исследования
+- I retrieve the latest changes from the repository and apply them first with a single command, then in stages
 
-## Материалы и методы
+![](image/17.png)
 
-- Представляйте данные качественно
-- Количественно, только если крайне необходимо
-- Излишние детали не нужны
+- Enable automatic commit and send of repository changes
 
-## Содержание исследования
+![](image/18.png)
 
-- Предлагаемое решение задач исследования с обоснованием
-- Основные этапы работы
+# Results
 
-## Результаты
+In the course of the laboratory work I acquired the skill of customizing the working environment
 
-- Не нужны все результаты
-- Необходимы логические связки между слайдами
-- Необходимо показать понимание материала
-
-
-## Итоговый слайд
-
-- Запоминается последняя фраза. © Штирлиц
-- Главное сообщение, которое вы хотите донести до слушателей
-- Избегайте использовать последний слайд вида *Спасибо за внимание*
-
-# Рекомендации
-
-## Принцип 10/20/30
-
-  - 10 слайдов
-  - 20 минут на доклад
-  - 30 кегль шрифта
-
-## Связь слайдов
-
-::: incremental
-
-- Один слайд --- одна мысль
-- Нельзя ссылаться на объекты, находящиеся на предыдущих слайдах (например, на формулы)
-- Каждый слайд должен иметь заголовок
-
-:::
-
-## Количество сущностей
-
-::: incremental
-
-- Человек может одновременно помнить $7 \pm 2$ элемента
-- При размещении информации на слайде старайтесь чтобы в сумме слайд содержал не более 5 элементов
-- Можно группировать элементы так, чтобы визуально было не более 5 групп
-
-:::
-
-## Общие рекомендации
-
-::: incremental
-
-- На слайд выносится та информация, которая без зрительной опоры воспринимается хуже
-- Слайды должны дополнять или обобщать содержание выступления или его частей, а не дублировать его
-- Информация на слайдах должна быть изложена кратко, чётко и хорошо структурирована
-- Слайд не должен быть перегружен графическими изображениями и текстом
-- Не злоупотребляйте анимацией и переходами
-
-:::
-
-## Представление данных
-
-::: incremental
-
-- Лучше представить в виде схемы
-- Менее оптимально представить в виде рисунка, графика, таблицы
-- Текст используется, если все предыдущие способы отображения информации не подошли
-
-:::
 
