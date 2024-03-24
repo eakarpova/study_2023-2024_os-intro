@@ -1,13 +1,13 @@
 ---
 ## Front matter
 lang: ru-RU
-title: CFSGVHBJKA
-subtitle: cffsghjkdc
+title: Laboratory work No.
+subtitle:
 author:
-  - tfyhjkl
+  - Karpova E.A.
 institute:
-  - awsdftghujikop
-date: 01 января 1970
+  - Peoples' Friendship University of Russia, Moscow, Russia
+date:
 
 ## i18n babel
 babel-lang: russian
@@ -15,7 +15,7 @@ babel-otherlangs: english
 
 ## Formatting pdf
 toc: false
-toc-title: dxffcvgbhnm
+toc-title: Contents
 slide_level: 2
 aspectratio: 169
 section-titles: true
@@ -27,42 +27,45 @@ header-includes:
  - '\makeatother'
 ---
 
-# Информация
+# Information
 
-## Докладчик
+## Speaker
 
-:::::::::::::: {.columns align=center}
-::: {.column width="70%"}
+  * Karpova Esenia Alexkseevna
+  * student NKAbd-02-23
+  * faculty of physicks and mathematics
+  * PFUR
+  * [1132236008@pfur.ru](mailto:1132236008@pfur.ru)
+  * <https://github.com/eakarpova>
 
-  * xcvfbhnm
-  * cvbnm
-  * vbn
-  * dfgh
-  * [kulyabov-ds@rudn.ru](mailto:kulyabov-ds@rudn.ru)
-  * <https://yamadharma.github.io/ru/>
+# Introductory part
 
-:::
-::: {.column width="30%"}
+## Aims
 
-![](./image/kulyabov.jpg)
 
-:::
-::::::::::::::
+# Tasks
 
-# BLAT
+# Performing laboratory work
 
-## AAAAAAAA
+##
 
-jgh
+![](image/.png)
 
-## FAGSDJKF
+##
 
-mjhj
+![](image/.png)
 
-## GBNM,
+##
 
-- FCVGHBNJ
+![](image/.png)
 
-## DFGHJK
+##
 
-- SDFGHJKIOP
+![](image/.png)
+
+##
+
+![](image/.png)
+
+# Results
+
