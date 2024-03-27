@@ -42,30 +42,38 @@ header-includes:
 
 ## Aims
 
+- Mastering the main features of the Midnight Commander shell.
+- Acquisition of skills of practical work on viewing directories and files; manipulations with them
 
-# Tasks
+## Tasks
+
+1. Complete the mc assignment
+
+2. Perform a task on the built-in mc editor
+
 
 # Performing laboratory work
 
-##
+## Starting mc
 
-![](image/.png)
+![](image/2.png)
 
-##
+## File copying
 
-![](image/.png)
+![](image/3.png)
 
-##
+## Catalog creation
 
-![](image/.png)
+![](image/7.png)
 
-##
+## Hotkeys
 
-![](image/.png)
+![](image/13.png)
 
-##
+## Adding text
 
-![](image/.png)
+![](image/16.png)
 
 # Results
 
+I have mastered the basic features of the Midnight Commander command shell
